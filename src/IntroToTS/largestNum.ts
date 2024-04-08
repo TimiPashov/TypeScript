@@ -10,5 +10,3 @@ function largestNum(...params: number[]): void {
 }
 
 largestNum(-3, -5, -22.5)
-
-//Some comment
