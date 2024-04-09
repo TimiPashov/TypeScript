@@ -1,0 +1,1 @@
+{"version":3,"file":"employees.js","sourceRoot":"","sources":["../../src/IntroToTS/employees.ts"],"names":[],"mappings":";AAAA,SAAS,SAAS,CAAC,KAAe;IAC9B,KAAK,CAAC,OAAO,CAAC,QAAQ,CAAC,EAAE,CAAC,OAAO,CAAC,GAAG,CAAC,SAAS,QAAQ,wBAAwB,QAAQ,CAAC,MAAM,EAAE,CAAC,CAAC,CAAA;AACtG,CAAC;AAED,SAAS,CAAC;IAEN,cAAc;IAEd,gBAAgB;IAEhB,eAAe;IAEf,oBAAoB;CAEvB,CAAC,CAAA"}
