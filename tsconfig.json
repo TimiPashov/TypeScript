@@ -3,6 +3,7 @@
   "target": "esnext", //ECMAScript target version
   "module": "esnext", //module code generation
   "strict": true, //strict type-checking options
+  "sourceMap": true,
   "rootDir": "./src",
   "outDir": "dist", //redirect output to the directory.
   }
