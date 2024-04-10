@@ -3,7 +3,7 @@ interface Town {
     latitude: string,
     longitude: string
 }
-function towns(input: string[]) {
+function towns(input: string[]): Town[] {
     const output: Town[] = [];
     for (let town of input) {
         const currTown = town.split(' | ');
@@ -13,12 +13,13 @@ function towns(input: string[]) {
             longitude: (Number(currTown[2]).toFixed(2)).toString(),
         })
     }
-    return output.forEach(town => console.log(town));
+    return output;
 }
 
 towns(['Sofia | 42.696552 | 23.32601',
+    'Beijing | 39.913818 | 116.363625'])
+    .forEach(town => console.log(town));
 
-    'Beijing | 39.913818 | 116.363625']);
 
 
 
