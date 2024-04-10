@@ -12,7 +12,8 @@ function towns(input) {
     return output;
 }
 towns(['Sofia | 42.696552 | 23.32601',
-    'Beijing | 39.913818 | 116.363625']).forEach(town => console.log(town));
+    'Beijing | 39.913818 | 116.363625'])
+    .forEach(town => console.log(town));
 // INPUT:
 // ['Sofia | 42.696552 | 23.32601',
 // 'Beijing | 39.913818 | 116.363625']
