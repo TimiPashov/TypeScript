@@ -25,5 +25,4 @@ dealership.sellCar('BG02', 'S Class');
 dealership.sellCar('BG03', 'ML Class');
 dealership.sellCar('BG04', 'CLK Class');
 console.log(dealership.showDetails());
-console.log(dealership.soldCars);
 //# sourceMappingURL=carDealership.js.map
