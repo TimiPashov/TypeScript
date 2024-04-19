@@ -1,4 +1,4 @@
-class Person {
+class Personn {
     private name: string;
     private age: number;
 
@@ -13,6 +13,6 @@ class Person {
     }
 }
 
-const johnny = new Person('Johnny', 35);
+const johnny = new Personn('Johnny', 35);
 
 johnny.getInfo()

@@ -1,5 +1,5 @@
 "use strict";
-class Person {
+class Personn {
     name;
     age;
     constructor(name, age) {
@@ -10,6 +10,6 @@ class Person {
         console.log(`${this.name} is ${this.age} years old.`);
     }
 }
-const johnny = new Person('Johnny', 35);
+const johnny = new Personn('Johnny', 35);
 johnny.getInfo();
 //# sourceMappingURL=opinionPoll.js.map
