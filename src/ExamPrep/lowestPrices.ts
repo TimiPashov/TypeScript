@@ -14,7 +14,7 @@ function comparePrices(product1: Product, product2: Product): Product {
   return product1;
 }
 
-function lowestPrices(input: string[]) {
+function lowestPrices(input: string[]): void {
   const output: OutputProduct = {};
   for (let item of input) {
     const productDetails: string[] = item.split(" | ");

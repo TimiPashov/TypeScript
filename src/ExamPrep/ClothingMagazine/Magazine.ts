@@ -1,16 +1,16 @@
 import { Cloth } from "./Cloth";
-import { ClothType } from "./types/Cloth";
+
 
 export class Magazine {
   type: string;
   capacity: number;
-  clothes: ClothType[] = [];
+  clothes: Cloth[] = [];
   constructor(type: string, capacity: number) {
     this.type = type;
     this.capacity = capacity;
   }
 
-  addCloth(cloth: ClothType): void {
+  addCloth(cloth: Cloth): void {
     if (this.clothes.length >= this.capacity) {
       return;
     }
@@ -18,7 +18,7 @@ export class Magazine {
   }
 
   removeCloth(color: string): boolean {
-    const clothToRemove: ClothType | undefined = this.clothes.find(
+    const clothToRemove: Cloth | undefined = this.clothes.find(
       (cloth) => cloth.color === color
     );
     const index = this.clothes.indexOf(clothToRemove!);
@@ -29,8 +29,8 @@ export class Magazine {
     return true;
   }
 
-  getSmallestCloth(): ClothType {
-    let output: ClothType = this.clothes[0];
+  getSmallestCloth(): Cloth {
+    let output: Cloth = this.clothes[0];
     this.clothes.forEach((cloth) => {
       if (cloth.size < output.size) {
         output = cloth;
@@ -39,7 +39,7 @@ export class Magazine {
     return output;
   }
 
-  getCloth(color: string): ClothType | undefined {
+  getCloth(color: string): Cloth | undefined {
     return this.clothes.find((cloth) => cloth.color === color);
   }
 
