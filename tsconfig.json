@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2022", //ECMAScript target version
-    "module": "esnext", //module code generation
+    "module": "CommonJS", //module code generation
     "strict": true, //strict type-checking options
     "sourceMap": true,
     "rootDir": "./src",
