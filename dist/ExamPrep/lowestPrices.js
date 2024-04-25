@@ -1,4 +1,10 @@
 "use strict";
+function comparePrices(product1, product2) {
+    if (product1.productPrice > product2.productPrice) {
+        return product2;
+    }
+    return product1;
+}
 function lowestPrices(input) {
     const output = {};
     for (let item of input) {
@@ -11,11 +17,8 @@ function lowestPrices(input) {
             output[productName] = product;
             continue;
         }
-        else if (output[productName].productPrice > product.productPrice) {
-            output[productName] = product;
-        }
         else {
-            continue;
+            output[productName] = comparePrices(output[productName], product);
         }
     }
     Object.keys(output).forEach((key) => console.log(`${key} -> ${output[key].productPrice} (${output[key].productTown})`));
